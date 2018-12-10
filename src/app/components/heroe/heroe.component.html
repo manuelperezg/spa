@@ -1,3 +1,20 @@
-<p>
-  heroe works!
-</p>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="card card-img fadeIn fast">
+<!-- 			<img class="card-img" data-src="https://i.pinimg.com/originals/01/ef/a4/01efa4c06419752c3a7427735d072df5.png" alt="Card image">
+ -->			<img class="card-img"  [src]="heroe.img" [alt]="heroe.nombre">
+			<div class="card card-body">
+				<h4 class="card-title">
+				{{ heroe.nombre }}</h4>
+				<p class="card-text"> {{ heroe.bio}}</p>
+				<p class="card-text"> {{ heroe.casa}}</p>
+				<p class="card-text"><small class="text-muted">{{ heroe.aparicion}}</small></p>
+			</div>
+		</div>
+		<hr>
+			<a class="btn btn-primary" [routerLink]="['/heroes']" role="button">Regresar</a>
+	</div>
+	<div class="col-sm-6">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vero optio nulla incidunt itaque repudiandae nesciunt, eos, beatae, delectus nihil praesentium soluta natus eaque, quas. Eum quis debitis, blanditiis esse.
+	</div>
+</div>
